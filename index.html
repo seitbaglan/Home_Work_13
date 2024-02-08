@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+<div class="Myconverter">
+    <h1>Конвертер валют</h1>
+<div class="Mytype">
+    <div>
+        <input type="number" id="amountInput" placeholder="число">
+    </div>
+
+    <div>
+       <select id="fromCurrency">
+            <option value="USD">USD</option>
+            <option value="KZT">KZT</option>
+            <option value="EUR">EUR</option>
+        </select>
+    </div>
+
+    <div>
+       <select id="toCurrency">
+            <option value="KZT">KZT</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+        </select>
+    </div>
+    <button class="button" type="button" onclick="convertCurrency()">Конверитровать</button>
+</div>
+        <div class="result">
+            <div id="">
+                <span>Резульат конвертации:</span>
+                <span id="result"></span>
+            </div>
+        </div>
+</div>
+    <script src="scripts.js"> </script>
+</body>
+</html>
